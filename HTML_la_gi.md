@@ -193,7 +193,7 @@ Có hai cách để chỉ định URL trong src thuộc tính:
         Ví dụ:
              src = "/ images / img_girl.jpg".
 ## Đường kẻ phân cách nằm ngang
-Tag **< hr/>** tạo một đường nằm ngang, bên trong trang HTML.
+Tag ** < hr/>** tạo một đường nằm ngang, bên trong trang HTML.
 Tag < hr/> có thể được sử dụng để tách nội dung bên trong trang HTML.
 ## Ngắt dòng HTML
 Phần **< br>**tử HTML xác định ngắt dòng.
@@ -207,14 +207,27 @@ Văn bản bên trong một < pre> là phần vắn có định dạng giữ ngu
 ## Kiểu HTML
 style: Thuộc tính HTML được sử dụng để thêm kiểu vào một phần tử, chẳng hạn như màu sắc, phông chữ, kích thước, v.v.
 ### Một số thuộc tính và tác dụng 
-style: thuộc tính để tạo kiểu các phần tử HTML vd: < tagname style="property:value;">
-background-color: cho màu nền vd: < p style="background-color:tomato;">This is a paragraph.< /p>  ------> <p style="background-color:tomato;">This is a paragraph.</p>
-color: cho màu văn bản vd: < p style="color:red;">This is a paragraph.< /p> -----> <p style="color:red;">This is a paragraph.</p>
-font-familycho: phông chữ văn bản vd: < p style="font-family:courier;">This is a paragraph.< /p> -----> <p style="font-family:courier;">This is a paragraph.</p>
-font-size: cho các kích thước văn bản vd:  < p style="font-size:160%;">This is a paragraph.< /p> -----> <p style="font-size:160%;">This is a paragraph.</p>>
-text-align: để căn chỉnh văn bản vd:    < p style="text-align:center;">Centered paragraph.< /p> -----> <p style="text-align:center;">Centered paragraph.</p>
+style           : thuộc tính để tạo kiểu các phần tử HTML vd: < tagname style="property:value;">
+background-color: cho màu nền                             vd: < p style="background-color:tomato;">This is a paragraph.< /p>
+color           : cho màu văn bản                         vd: < p style="color:red;">This is a paragraph.< /p>
+font-family     : cho phông chữ văn bản                   vd: < p style="font-family:courier;">This is a paragraph.< /p>
+font-size       : cho các kích thước văn bản              vd: < p style="font-size:160%;">This is a paragraph.< /p>
+text-align      : để căn chỉnh văn bản                    vd: < p style="text-align:center;">Centered paragraph.< /p>
 
 
+## Định dạng văn bản HTML
+HTML chứa một số yếu tố để xác định văn bản có ý nghĩa đặc biệt.
+### Một số yếu tố định dạng HTML
+<b> - Chữ in đậm
+<strong> - Văn bản quan trọng
+<i> - Văn bản in nghiêng
+<em> - Đoạn văn bản được nhấn mạnh
+<mark> - Văn bản được đánh dấu
+<small> - Văn bản nhỏ hơn
+<del> - Văn bản đã xóa
+<ins> - Đã chèn văn bản
+<sub> - Văn bản chỉ số
+<sup> - Văn bản siêu cấp
 
 
 
