@@ -76,7 +76,7 @@ Ví dụ về một số phần tử HTML:
      Các phần tử này được gọi là phần tử rỗng. Các phần tử trống không có thẻ kết thúc!
 
 ## Các phần tử HTML lồng nhau
-** Ta có ví dụ: ** 
+**Ta có ví dụ:** 
 
     <!DOCTYPE html>
     <html>
@@ -88,14 +88,107 @@ Ví dụ về một số phần tử HTML:
     </body>
     </html>
 
-** Giải thích ví dụ:**
+**Giải thích ví dụ:**
 
-Phần < html> tử là phần tử gốc và nó định nghĩa toàn bộ tài liệu HTML.
+Phần tử **< html>**là phần tử gốc và nó định nghĩa toàn bộ tài liệu HTML.
 Nó có một thẻ bắt đầu < html>và một thẻ kết thúc < /html>.
 Sau đó, bên trong < html>phần tử có một < body> phần tử:
 
         <h1>My First Heading</h1>
         <p>My first paragraph.</p>
+
+Phần **< body>**tử xác định phần thân của tài liệu.
+
+Nó có một thẻ bắt đầu < body>và một thẻ kết thúc < /body>.
+
+Sau đó, bên trong < body>phần tử có hai phần tử khác: < h1>và < p>:
+
+    <h1>My First Heading</h1>
+    <p>My first paragraph.</p>
+
+Phần **< h1>**tử xác định một tiêu đề.
+
+Nó có thẻ bắt đầu < h1>và thẻ kết thúc < /h1>:
+
+    <h1>My First Heading</h1>
+
+Phần **< p>**tử xác định một đoạn văn.
+
+Nó có thẻ bắt đầu < p>và thẻ kết thúc < /p>:
+
+    <p>My first paragraph.</p>
+
+## Không bao giờ bỏ qua thẻ kết thúc
+Một số phần tử HTML sẽ hiển thị chính xác, ngay cả khi bạn quên thẻ kết thúc:
+
+Thí dụ:
+
+    <html>
+    <body>
+
+    <p>This is a paragraph
+    <p>This is a paragraph
+
+    </body>
+    </html>
+
+Tuy nhiên, đừng bao giờ dựa vào điều này! Kết quả không mong muốn và có thể xảy ra lỗi nếu bạn quên thẻ kết thúc!
+
+### Phần tử HTML trống
+
+Phần tử HTML không có nội dung được gọi là phần tử trống.
+
+Các **<br>**thẻ định nghĩa một ngắt dòng, và là một yếu tố có sản phẩm nào mà không có một thẻ đóng:
+
+Thí dụ:
+
+    <p>This is a <br> paragraph with a line break.</p>
+
+## HTML không phân biệt chữ hoa chữ thường
+
+Các thẻ HTML không phân biệt chữ hoa chữ thường: 
+
+    <P>có nghĩa là giống như <p>.
+
+# Thuộc tính HTML
+Thuộc tính HTML cung cấp thông tin bổ sung về các phần tử HTML.
+
+## Thuộc tính HTML
+1. Tất cả các phần tử HTML có thể có các thuộc tính
+2. Các thuộc tính cung cấp thông tin bổ sung về các phần tử
+3. Các thuộc tính luôn được chỉ định trong thẻ bắt đầu
+4. Các thuộc tính thường có trong các cặp tên / giá trị như: name = "value"
+
+## Thuộc tính href
+Các **<a>** thẻ định nghĩa một siêu liên kết. 
+Các hrefthuộc tính xác định URL của trang liên kết đi vào:
+
+Thí dụ:
+
+    <a href="https://www.w3schools.com">Visit W3Schools</a>
+
+Bạn sẽ tìm hiểu thêm về các liên kết trong chương Liên kết HTML của chúng tôi .
+
+## Thuộc tính src
+Các **<img>**thẻ được sử dụng để nhúng một hình ảnh trong một trang HTML. 
+Các srcquy định cụ thể thuộc tính đường dẫn đến hình ảnh sẽ được hiển thị:
+Thí dụ:
+
+    <img src="img_girl.jpg">
+
+Có hai cách để chỉ định URL trong src thuộc tính:
+
+1. URL tuyệt đối - Liên kết đến một hình ảnh bên ngoài được lưu trữ trên một trang web khác.
+ Ví dụ: src = "https://www.w3schools.com/   images/img_girl.jpg".
+Ghi chú: Hình ảnh bên ngoài có thể thuộc bản quyền. Nếu bạn không được phép sử dụng nó, bạn có thể vi phạm luật bản quyền. Ngoài ra, bạn không thể kiểm soát hình ảnh bên ngoài; nó có thể đột ngột bị xóa hoặc thay đổi.
+
+2. URL tương đối - Liên kết đến một hình ảnh được lưu trữ trong trang web. Ở đây, URL không bao gồm tên miền. Nếu URL bắt đầu mà không có dấu gạch chéo, nó sẽ liên quan đến trang hiện tại. Ví dụ: src = "img_girl.jpg". Nếu URL bắt đầu bằng dấu gạch chéo, nó sẽ có liên quan đến miền. Ví dụ: src = "/ images / img_girl.jpg".
+
+Mẹo: Tốt nhất là sử dụng URL tương đối. Chúng sẽ không bị hỏng nếu bạn thay đổi tên miền.
+
+
+
+
 
 
 
