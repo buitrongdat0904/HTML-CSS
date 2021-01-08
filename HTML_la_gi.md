@@ -1,10 +1,10 @@
 # HTML là gì ?
-    1. HTML là viết tắt của Hyper Text Markup Language
-    2. HTML là ngôn ngữ đánh dấu tiêu chuẩn để tạo các trang Web
-    3. HTML mô tả cấu trúc của một trang Web
-    4. HTML bao gồm một loạt các phần tử
-    5. Các phần tử HTML cho trình duyệt biết cách hiển thị nội dung
-    6. Các phần tử HTML gắn nhãn các phần nội dung như "đây là một tiêu đề", "đây là một đoạn văn", "đây là một liên kết", v.v.
+1. HTML là viết tắt của Hyper Text Markup Language
+2. HTML là ngôn ngữ đánh dấu tiêu chuẩn để tạo các trang Web
+3. HTML mô tả cấu trúc của một trang Web
+4. HTML bao gồm một loạt các phần tử
+5. Các phần tử HTML cho trình duyệt biết cách hiển thị nội dung
+6. Các phần tử HTML gắn nhãn các phần nội dung như "đây là một tiêu đề", "đây là một đoạn văn", "đây là một liên kết", v.v.
 
 #### Một tài liệu HTML đơn giản
 
@@ -40,4 +40,67 @@ Như đã trình bày ở trên, HTML là ngôn ngữ đánh dấu bằng thẻ 
 |< body>	  |Thẻ này đại diện cho thân tài liệu và giữ các thẻ như < h1>, < div>, < p> ...                |
 |< h1>	      | Thẻ này đại diện cho các tiêu đề trang.                                                     |
 |< p>         |Thẻ này đại diện cho đoạn văn.                                                               |
+
+# Các thẻ HTML cơ bản (HTML Tag)
+
+## Các thẻ hiển thị đầu đề (heading) trong HTML
+
+    <!DOCTYPE html>
+    <html>
+    <head>
+    <title>Day la tieu de - Vi du dau de</title>
+    </head>
+    <body>
+    <h1>Day la dau de 1</h1>
+    <h2>Day la dau de 2</h2>
+    <h3>Day la dau de 3</h3>
+    <h4>Day la dau de 4</h4>
+    <h5>Day la dau de 5</h5>
+    <h6>Day la dau de 6</h6>
+    </body>
+    </html>
+
+![tieude](https://vietjack.com/html/images/vi-du-html-1.PNG)
+
+# Phần tử HTML
+Phần tử HTML được xác định bởi thẻ bắt đầu, một số nội dung và thẻ kết thúc.
+
+## Phần tử HTML
+Phần tử HTML là tất cả mọi thứ từ thẻ bắt đầu đến thẻ kết thúc:
+< tagname > Nội dung ở đây ... < / tagname >
+Ví dụ về một số phần tử HTML:
+    < h1 > Tiêu đề đầu tiên của tôi < / h1 >
+    < p > Đoạn đầu tiên của tôi. < / p >
+
+    Lưu ý: Một số phần tử HTML không có nội dung (như phần tử <br>).
+     Các phần tử này được gọi là phần tử rỗng. Các phần tử trống không có thẻ kết thúc!
+
+## Các phần tử HTML lồng nhau
+** Ta có ví dụ: ** 
+
+    <!DOCTYPE html>
+    <html>
+    <body>
+
+    <h1>My First Heading</h1>
+    <p>My first paragraph.</p>
+
+    </body>
+    </html>
+
+** Giải thích ví dụ:**
+
+    Phần <html>tử là phần tử gốc và nó định nghĩa toàn bộ tài liệu HTML.
+    Nó có một thẻ bắt đầu <html>và một thẻ kết thúc </html>.
+    Sau đó, bên trong <html>phần tử có một <body> phần tử:
+    
+        <h1>My First Heading</h1>
+        <p>My first paragraph.</p>
+
+
+
+
+
+
+
 
