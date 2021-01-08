@@ -33,7 +33,7 @@ Như đã trình bày ở trên, HTML là ngôn ngữ đánh dấu bằng thẻ 
 #### Ví dụ trên về tài liệu HTML đã sử dụng các thẻ sau đây:
 
 |Tag          | Miêu tả                                                                                     | 
-|-------------|:-------------------------------------------------------------------------------------------:|
+|------------:|--------------------------------------------------------------------------------------------:|
 |<!DOCTYPE...>| Còn gọi là thẻ khai báo một tài liệu HTML. Thẻ này xác định loại tài liệu và phiên bản HTML.|
 |< head>      |Thẻ này đại diện cho đầu trang tài liệu mà có thể giữ các thẻ HTML như < title>, < link> ... | 
 |< title>	  |Thẻ < title> được sử dụng trong thẻ < head> chỉ tiêu đề tài liệu.                            | 
