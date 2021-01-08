@@ -90,10 +90,10 @@ Ví dụ về một số phần tử HTML:
 
 ** Giải thích ví dụ:**
 
-    Phần <html>tử là phần tử gốc và nó định nghĩa toàn bộ tài liệu HTML.
-    Nó có một thẻ bắt đầu <html>và một thẻ kết thúc </html>.
-    Sau đó, bên trong <html>phần tử có một <body> phần tử:
-    
+Phần <html>tử là phần tử gốc và nó định nghĩa toàn bộ tài liệu HTML.
+Nó có một thẻ bắt đầu <html>và một thẻ kết thúc </html>.
+Sau đó, bên trong <html>phần tử có một <body> phần tử:
+
         <h1>My First Heading</h1>
         <p>My first paragraph.</p>
 
