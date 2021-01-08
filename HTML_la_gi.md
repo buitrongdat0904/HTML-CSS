@@ -90,14 +90,14 @@ Ví dụ về một số phần tử HTML:
 
 **Giải thích ví dụ:**
 
-Phần tử **< html>**là phần tử gốc và nó định nghĩa toàn bộ tài liệu HTML.
+Phần tử < html>là phần tử gốc và nó định nghĩa toàn bộ tài liệu HTML.
 Nó có một thẻ bắt đầu < html>và một thẻ kết thúc < /html>.
 Sau đó, bên trong < html>phần tử có một < body> phần tử:
 
         <h1>My First Heading</h1>
         <p>My first paragraph.</p>
 
-Phần **< body>**tử xác định phần thân của tài liệu.
+Phần < body>tử xác định phần thân của tài liệu.
 
 Nó có một thẻ bắt đầu < body>và một thẻ kết thúc < /body>.
 
@@ -106,13 +106,13 @@ Sau đó, bên trong < body>phần tử có hai phần tử khác: < h1>và < p>
     <h1>My First Heading</h1>
     <p>My first paragraph.</p>
 
-Phần **< h1>**tử xác định một tiêu đề.
+Phần < h1>tử xác định một tiêu đề.
 
 Nó có thẻ bắt đầu < h1>và thẻ kết thúc < /h1>:
 
     <h1>My First Heading</h1>
 
-Phần **< p>**tử xác định một đoạn văn.
+Phần < p>tử xác định một đoạn văn.
 
 Nó có thẻ bắt đầu < p>và thẻ kết thúc < /p>:
 
@@ -138,7 +138,7 @@ Tuy nhiên, đừng bao giờ dựa vào điều này! Kết quả không mong m
 
 Phần tử HTML không có nội dung được gọi là phần tử trống.
 
-Các **<br>**thẻ định nghĩa một ngắt dòng, và là một yếu tố có sản phẩm nào mà không có một thẻ đóng:
+Các < br>thẻ định nghĩa một ngắt dòng, và là một yếu tố có sản phẩm nào mà không có một thẻ đóng:
 
 Thí dụ:
 
@@ -160,7 +160,7 @@ Thuộc tính HTML cung cấp thông tin bổ sung về các phần tử HTML.
 4. Các thuộc tính thường có trong các cặp tên / giá trị như: name = "value"
 
 ## Thuộc tính href
-Các **<a>** thẻ định nghĩa một siêu liên kết. 
+Các < a> thẻ định nghĩa một siêu liên kết. 
 Các hrefthuộc tính xác định URL của trang liên kết đi vào:
 
 Thí dụ:
@@ -170,7 +170,7 @@ Thí dụ:
 Bạn sẽ tìm hiểu thêm về các liên kết trong chương Liên kết HTML của chúng tôi .
 
 ## Thuộc tính src
-Các **< img>**thẻ được sử dụng để nhúng một hình ảnh trong một trang HTML. 
+Các < img>thẻ được sử dụng để nhúng một hình ảnh trong một trang HTML. 
 Các srcquy định cụ thể thuộc tính đường dẫn đến hình ảnh sẽ được hiển thị:
 Thí dụ:
 
@@ -196,11 +196,11 @@ Có hai cách để chỉ định URL trong src thuộc tính:
 Tag ** < hr/>** tạo một đường nằm ngang, bên trong trang HTML.
 Tag < hr/> có thể được sử dụng để tách nội dung bên trong trang HTML.
 ## Ngắt dòng HTML
-Phần **< br>**tử HTML xác định ngắt dòng.
+Phần < br*tử HTML xác định ngắt dòng.
 Sử dụng < br>nếu bạn muốn ngắt dòng (một dòng mới) mà không bắt đầu một đoạn văn mới:
 
 ## Giải pháp - Phần tử <pre> HTML
-Phần **< pre>**tử HTML xác định văn bản được định dạng trước.
+Phần < pre>tử HTML xác định văn bản được định dạng trước.
 
 Văn bản bên trong một < pre> là phần vắn có định dạng giữ nguyên không thay đổi từ trong file html khi ra đến trình duyệt.
 
@@ -218,16 +218,16 @@ text-align      : để căn chỉnh văn bản                    vd: < p style
 ## Định dạng văn bản HTML
 HTML chứa một số yếu tố để xác định văn bản có ý nghĩa đặc biệt.
 ### Một số yếu tố định dạng HTML
-<b> - Chữ in đậm
-<strong> - Văn bản quan trọng
-<i> - Văn bản in nghiêng
-<em> - Đoạn văn bản được nhấn mạnh
-<mark> - Văn bản được đánh dấu
-<small> - Văn bản nhỏ hơn
-<del> - Văn bản đã xóa
-<ins> - Đã chèn văn bản
-<sub> - Văn bản chỉ số
-<sup> - Văn bản siêu cấp
+< b>      : Chữ in đậm                  vd: <b>This text is bold</b>
+< strong> : Văn bản quan trọng          vd: <strong>This text is important!</strong>
+< i>      : Văn bản in nghiêng          vd: <i>This text is italic</i>
+< em>     : Đoạn văn bản được nhấn mạnh vd: <em>This text is emphasized</em>
+< mark>   : Văn bản được đánh dấu       vd: <small>This is some smaller text.</small>
+< small>  : Văn bản nhỏ hơn             vd: <p>Do not forget to buy <mark>milk</mark> today.</p>
+< del>    : Văn bản đã xóa              vd: <p>My favorite color is <del>blue</del> red.</p>
+< ins>    : Đã chèn văn bản             vd: <p>My favorite color is <del>blue</del> <ins>red</ins>.</p>
+< sub>    : Văn bản chỉ số              vd: <p>This is <sub>subscripted</sub> text.</p>
+< sup>    : Văn bản siêu cấp            vd: <p>This is <sup>superscripted</sup> text.</p>
 
 
 
