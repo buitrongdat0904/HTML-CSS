@@ -170,7 +170,7 @@ Thí dụ:
 Bạn sẽ tìm hiểu thêm về các liên kết trong chương Liên kết HTML của chúng tôi .
 
 ## Thuộc tính src
-Các **<img>**thẻ được sử dụng để nhúng một hình ảnh trong một trang HTML. 
+Các **< img>**thẻ được sử dụng để nhúng một hình ảnh trong một trang HTML. 
 Các srcquy định cụ thể thuộc tính đường dẫn đến hình ảnh sẽ được hiển thị:
 Thí dụ:
 
