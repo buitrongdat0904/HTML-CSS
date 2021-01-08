@@ -179,12 +179,24 @@ Thí dụ:
 Có hai cách để chỉ định URL trong src thuộc tính:
 
 1. URL tuyệt đối - Liên kết đến một hình ảnh bên ngoài được lưu trữ trên một trang web khác.
- Ví dụ: src = "https://www.w3schools.com/   images/img_girl.jpg".
-Ghi chú: Hình ảnh bên ngoài có thể thuộc bản quyền. Nếu bạn không được phép sử dụng nó, bạn có thể vi phạm luật bản quyền. Ngoài ra, bạn không thể kiểm soát hình ảnh bên ngoài; nó có thể đột ngột bị xóa hoặc thay đổi.
+    Ví dụ: 
 
-2. URL tương đối - Liên kết đến một hình ảnh được lưu trữ trong trang web. Ở đây, URL không bao gồm tên miền. Nếu URL bắt đầu mà không có dấu gạch chéo, nó sẽ liên quan đến trang hiện tại. Ví dụ: src = "img_girl.jpg". Nếu URL bắt đầu bằng dấu gạch chéo, nó sẽ có liên quan đến miền. Ví dụ: src = "/ images / img_girl.jpg".
+        src = "https://www.w3schools.com/images/img_girl.jpg".
 
-Mẹo: Tốt nhất là sử dụng URL tương đối. Chúng sẽ không bị hỏng nếu bạn thay đổi tên miền.
+
+2. URL tương đối 
+    - Liên kết đến một hình ảnh được lưu trữ trong trang web. Ở đây, URL không bao gồm tên miền. Nếu URL bắt đầu mà không có dấu gạch chéo, nó sẽ liên quan đến trang hiện tại.
+     Ví dụ: 
+            src = "img_girl.jpg".
+    Nếu URL bắt đầu bằng dấu gạch chéo, nó sẽ có liên quan đến miền. 
+
+        Ví dụ:
+
+             src = "/ images / img_girl.jpg".
+
+
+
+
 
 
 
