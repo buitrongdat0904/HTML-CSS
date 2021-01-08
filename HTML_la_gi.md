@@ -191,8 +191,30 @@ Có hai cách để chỉ định URL trong src thuộc tính:
     Nếu URL bắt đầu bằng dấu gạch chéo, nó sẽ có liên quan đến miền. 
 
         Ví dụ:
-
              src = "/ images / img_girl.jpg".
+## Đường kẻ phân cách nằm ngang
+Tag **< hr/>** tạo một đường nằm ngang, bên trong trang HTML.
+Tag < hr/> có thể được sử dụng để tách nội dung bên trong trang HTML.
+## Ngắt dòng HTML
+Phần **< br>**tử HTML xác định ngắt dòng.
+Sử dụng < br>nếu bạn muốn ngắt dòng (một dòng mới) mà không bắt đầu một đoạn văn mới:
+
+## Giải pháp - Phần tử <pre> HTML
+Phần **< pre>**tử HTML xác định văn bản được định dạng trước.
+
+Văn bản bên trong một < pre> là phần vắn có định dạng giữ nguyên không thay đổi từ trong file html khi ra đến trình duyệt.
+
+## Kiểu HTML
+style: Thuộc tính HTML được sử dụng để thêm kiểu vào một phần tử, chẳng hạn như màu sắc, phông chữ, kích thước, v.v.
+### Một số thuộc tính và tác dụng 
+style: thuộc tính để tạo kiểu các phần tử HTML vd: < tagname style="property:value;">
+background-color: cho màu nền vd: < p style="background-color:tomato;">This is a paragraph.< /p>  ------> <p style="background-color:tomato;">This is a paragraph.</p>
+color: cho màu văn bản vd: < p style="color:red;">This is a paragraph.< /p> -----> <p style="color:red;">This is a paragraph.</p>
+font-familycho: phông chữ văn bản vd: < p style="font-family:courier;">This is a paragraph.< /p> -----> <p style="font-family:courier;">This is a paragraph.</p>
+font-size: cho các kích thước văn bản vd:  < p style="font-size:160%;">This is a paragraph.< /p> -----> <p style="font-size:160%;">This is a paragraph.</p>>
+text-align: để căn chỉnh văn bản vd:    < p style="text-align:center;">Centered paragraph.< /p> -----> <p style="text-align:center;">Centered paragraph.</p>
+
+
 
 
 
