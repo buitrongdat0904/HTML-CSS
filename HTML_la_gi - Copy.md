@@ -175,19 +175,10 @@ Nội dung của tiêu đề nhỏ
     </html>
 
 #### Hiển thị trình duyệt:
+<p>Đây là đoạn văn</p>
 
-  <!DOCTYPE html>
-    <html>
-    <head>
-    <meta charset=utf-8" />
-    <title>Tiêu đề trang web</title>
-    </head>
-    <body>
-    <p>Đây là đoạn văn</p>
-    </body>
-    </html>
-
-    Để ngắt đoạn cho đoạn văn ta có thể dùng 2 cách:
+   
+- Để ngắt đoạn cho đoạn văn ta có thể dùng 2 cách:
 
 ### Ngắt đoạn cùng dòng: sử dụng thẻ < br/> (< br/> là thẻ thuộc nhóm inline).
 
@@ -207,19 +198,8 @@ Nội dung của tiêu đề nhỏ
     </html>
 
 #### Hiển thị trình duyệt:
-
-<!DOCTYPE html>
-<html>
-<head>
-<meta charset=utf-8" />
-<title>Tiêu đề trang web</title>
-</head>
-
-<body>
 <p>Đây là đoạn văn dài rất dài rất dài rất dài<br />
 rất dài rất dài rất dài rất dài.</p>
-</body>
-</html>
 
 - Ngắt đoạn khác dòng: sử dụng 2 thẻ <p></p> để ngắt đoạn khác dòng, tránh trường hợp sử dụng 2 lần thẻ < br/> vì về mặt ý nghĩa 
   của thẻ sẽ không còn chính xác, điều này sẽ gây khó khăn cho trình duyệt phân biệt đâu là cùng đoạn, đâu là khác đoạn.
@@ -238,19 +218,10 @@ rất dài rất dài rất dài rất dài.</p>
     </body>
     </html>
 
-Hiển thị trình duyệt:
-    <!DOCTYPE html>
-    <html>
-    <head>
-    <meta charset=utf-8" />
-    <title>Tiêu đề trang web</title>
-    </head>
-    <body>
+Hiển thị trình duyệt:    
     <p>Đây là đoạn văn thứ nhất.</p>
     <p>Đây là đoạn văn thứ hai.</p>
-    </body>
-    </html>
-
+   
 
 
 
