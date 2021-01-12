@@ -271,6 +271,25 @@ Xem ví dụ để hiểu rõ hơn về thẻ < div>< /div>, đoạn code bên d
 <div id="sidebar">Viết nội dung phần sidebar ở đây</div>
 <div id="footer">Viết nội dung phần footer ở đây</div>
 
+# Thẻ xác định danh sách
+
+## Định nghĩa
+Định nghĩa danh sách trong HTML/HTML5 có nhiều dạng khác nhau, mỗi dạng sẽ theo một cấu trúc thẻ khác nhau, do đó việc hiểu rõ danh sách rất quan trọng, nếu bạn chưa nắm rõ cách định nghĩa về danh sách thì bạn không thể hiểu hết được bài học này, xin hãy xem trước định nghĩa về danh sách trong HTML/HTML5.
+
+Thẻ xác định danh sách (có đề mục và mô tả đề mục) là một bộ gồm 3 thẻ:
+
+- < dl>< /dl> viết tắt của chữ "definition list" có nghĩa là sự xác định (hay định nghĩa) danh sách.
+- < dt>< /dt> viết tắt của chữ "defines an item" có nghĩa là xác định (hay định nghĩa) một mục.
+- < dd>< /dd> viết tắt của chữ "defines describe an item" có nghĩa là xác định (hay định nghĩa) một mô tả của một mục.
+
+Thẻ xác định danh sách sử dụng cho danh sách có các mục và có nội dung mô tả cho các mục, không sử dụng cho danh sách không có phần nội dung mô tả.
+
+
+
+
+
+
+
    
 
 
