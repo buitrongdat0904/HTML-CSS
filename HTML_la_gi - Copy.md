@@ -86,9 +86,9 @@ Nhóm các thẻ block: là các thẻ dùng để sắp xếp bố cục cho tr
 - Thẻ xác định hình ảnh có chú thích < figure> - < figcaption>
   Giải thích rõ nghĩa hơn cho image.
 
-## Thẻ định dạng tiêu đề
+# Thẻ định dạng tiêu đề
 
-### Định nghĩa và cách dùng
+## Định nghĩa và cách dùng
 
 - Thẻ < hx>: chữ "h" viết tắc của từ "headings" nghĩa là đề mục, hoặc tiêu đề.
 - Thẻ < hx> : Sử dụng để định nghĩa tiêu đề cho nội dung HTML, giúp cho trình duyệt nhận biết được tiêu đề của một nội dung.
@@ -116,7 +116,7 @@ Html viết:
     </body>
     </html>
 
-Hiển thị trình duyệt:
+### Hiển thị trình duyệt:
 
 # Đây là tiêu đề quan trọng nhất (lớn nhất)
 ## Đây là tiêu đề quan trọng thứ nhì (lớn thứ nhì)
@@ -127,7 +127,7 @@ Hiển thị trình duyệt:
 
 Thẻ < h1> là thẻ quan trọng nhất trong trang HTML, trong một trang html thường người ta sử dụng < h1> một lần duy nhất cho logo, hoặc dòng mô tả trang web (mục đích SEO), mục đích của < h1> là khai báo cho trình duyệt biết đâu là phần quan trọng nhất của trang web.
 
-HTML viết
+### HTML viết
 
     <!DOCTYPE html>
     <html>
@@ -146,7 +146,7 @@ HTML viết
     </body>
     </html>
 
-Hiển thị trình duyệt:
+### Hiển thị trình duyệt:
 # Logo
 ## Tiêu đề lớn
 Nội dung của tiêu đề lớn
@@ -218,9 +218,59 @@ rất dài rất dài rất dài rất dài.</p>
     </body>
     </html>
 
-Hiển thị trình duyệt:    
+### Hiển thị trình duyệt:    
     <p>Đây là đoạn văn thứ nhất.</p>
     <p>Đây là đoạn văn thứ hai.</p>
+
+# Thẻ phân chia khu vực
+
+## Định nghĩa và cách dùng thẻ < div>
+
+- Thẻ < div>< /div> viết tắt của từ "division" có nghĩa là phân chia, ta có thể hiểu đây là sự phân chia khu vực hay vùng,
+  sự phân chia này sẽ giúp cho trình duyệt hiểu rõ những vùng được bố cục trên trang web.
+- Có thể chứa hầu hết các thẻ trong HTML/XHTML.
+- Một số thẻ không được chứa bên trong < div>< /div>: < html>< /html>, < meta>< /meta>, < body>< /body>,
+  < title>< /title>, < link>< /link>.
+- Một số thẻ không nên chứa bên trong < div>< /div>: < style>< /style>, < script>< /script>.
+- Một số khu vực khuyên sử dụng thẻ < div>< /div>:
+
+    - Header, global navigation, page body, content, sidebar, footer (Xem lại cấu trúc cơ bản của trang web)
+    - Một số khu vực lớn, cấu trúc có nhiều thẻ bên trong thì cũng nên nhóm lại bằng thẻ < div>< /div> để tiện cho việc điều khiển.
+
+Xem ví dụ để hiểu rõ hơn về thẻ < div>< /div>, đoạn code bên dưới có sử dụng thuộc tính id, chúng ta có thể xem ở phần tham khảo thuộc tính id.
+
+### HTML viết
+
+    <!DOCTYPE html>
+    <html>
+    <head>
+    <meta charset=utf-8" />
+    <title>Tiêu đề trang web</title>
+    </head>
+
+    <body>
+    <div id="header">Viết nội dung phần header ở đây</div>
+
+    <div id="gNav">Viết nội dung phần global navigation ở đây</div>
+
+    <div id="pageBody">
+    <div id="content">Viết nội dung phần content ở đây</div>
+    <div id="sidebar">Viết nội dung phần sidebar ở đây</div>
+    </div>
+
+    <div id="footer">Viết nội dung phần footer ở đây</div>
+    </body>
+    </html>
+
+### Hiển thị trình duyệt:
+
+<div id="header">Viết nội dung phần header ở đây</div>
+<div id="gNav">Viết nội dung phần global navigation ở đây</div>
+<div id="pageBody">
+<div id="content">Viết nội dung phần content ở đây</div>
+<div id="sidebar">Viết nội dung phần sidebar ở đây</div>
+<div id="footer">Viết nội dung phần footer ở đây</div>
+
    
 
 
