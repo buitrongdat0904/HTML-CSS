@@ -488,24 +488,92 @@ Cấu trúc phải theo các nguyên tắc sau đây:
         <li></li>
         <li></li>
         </ul>
+  
+
+  # Thẻ <nav>
+  ## Định nghĩa và sử dụng
+- Tag <nav> định nghĩa liên kết điều hướng (navigation).
+- Tag <nav> thường sử dụng cho global menu, local link, topic path, pager link,...
+- Nội dung bên trong <nav> thường là một danh sách <ul> hoặc <ol>.
+### Cấu trúc
+
+    <nav>
+        <ul>
+            <li><a href="#">Trang chủ<a></li>
+            <li><a href="#">Giới thiệu<a></li>
+            <li><a href="#">Sản phẩm<a></li>
+            <li><a href="#">Liên hệ<a></li>
+        </ul>
+    </nav>
 
 
+  # Thẻ <header>
+
+## Định nghĩa và sử dụng
+- Tag <header> định nghĩa khu vực header (phần đầu) của trang.
+- Thường được dùng cho phần giới thiệu hay chứa các thành phần chuyển hướng (navigation).
+### Cấu trúc
+
+    <header></header>
+ ### Ví dụ 
+    <header>
+          HEADER
+
+          <nav>
+              <ul>
+                  <li><a href="#">Trang chủ<a></li>
+                  <li><a href="#">Giới thiệu<a></li>
+                  <li><a href="#">Sản phẩm<a></li>
+                  <li><a href="#">Liên hệ<a></li>
+              </ul>
+          </nav>
+      </header>
 
 
+# section
+
+## Định nghĩa và sử dụng
+- Tag < section> định nghĩa một khu vực (vùng bao) trong văn bản HTML.
+- Tag < section> bên trong thường chứa một < hx> và nội dung.
+
+## Cấu trúc
+
+    <section>
+    <h2>Tiêu đề section</h2>
+    ...
+    </section>
+
+### Ví dụ
+    <section id="layout">
+        <header>
+            HEADER
+
+            <nav>
+                <ul>
+                    <li><a href="#">Trang chủ<a></li>
+                    <li><a href="#">Giới thiệu<a></li>
+                    <li><a href="#">Sản phẩm<a></li>
+                    <li><a href="#">Liên hệ<a></li>
+                </ul>
+            </nav>
+        </header>
+    </section>
 
 
+# footer
+## Định nghĩa và sử dụng
+- Tag < footer> định nghĩa khu vực footer (phần cuối) của trang.
+- Thường chứa các thông tin liên lạc của tác giả, nguồn gốc của bài viết.
+## Cấu trúc
+ 
+    <footer></footer>
+
+# Những thẻ thuộc nhóm inline
 
 
-   
-
-
-
-
-
-
-
-
-
-
-
-
+- Những thẻ thuộc nhóm inline là những thẻ cơ bản của HTML/XHTML, chỉ được dùng để chứa nội dung cho text hoặc các thẻ inline khác.
+- - Bản thân text cũng có thể coi thuộc nhóm inline.
+- Những thẻ thuộc nhóm inline nên được bao ngoài bởi nhóm các thẻ block, vì các thẻ block sẽ lo nhiệm vụ dàn trang web, còn 
+  các thẻ thuộc nhóm inline chỉ để hiển thị nội dung cho văn bản.
+- Những thẻ thuộc nhóm inline có thể được lồng vào nhau.
+- Không được sử dụng các thẻ khác bên trong các thẻ inline, cách sử dụng sau đây là không đúng chuẩn:

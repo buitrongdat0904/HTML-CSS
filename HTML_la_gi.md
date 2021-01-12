@@ -1,246 +1,355 @@
-# HTML là gì ?
-1. HTML là viết tắt của Hyper Text Markup Language
-2. HTML là ngôn ngữ đánh dấu tiêu chuẩn để tạo các trang Web
-3. HTML mô tả cấu trúc của một trang Web
-4. HTML bao gồm một loạt các phần tử
-5. Các phần tử HTML cho trình duyệt biết cách hiển thị nội dung
-6. Các phần tử HTML gắn nhãn các phần nội dung như "đây là một tiêu đề", "đây là một đoạn văn", "đây là một liên kết", v.v.
+# Thẻ phân chia khu vực
 
-#### Một tài liệu HTML đơn giản
+## Định nghĩa và cách dùng thẻ < div>
 
-    <h1>Tiêu đề 01</h1>
+- Thẻ < div>< /div> viết tắt của từ "division" có nghĩa là phân chia, ta có thể hiểu đây là sự phân chia khu vực hay vùng,
+  sự phân chia này sẽ giúp cho trình duyệt hiểu rõ những vùng được bố cục trên trang web.
+- Có thể chứa hầu hết các thẻ trong HTML/XHTML.
+- Một số thẻ không được chứa bên trong < div>< /div>: < html>< /html>, < meta>< /meta>, < body>< /body>,
+  < title>< /title>, < link>< /link>.
+- Một số thẻ không nên chứa bên trong < div>< /div>: < style>< /style>, < script>< /script>.
+- Một số khu vực khuyên sử dụng thẻ < div>< /div>:
 
-    <ul>
-    <li><a href="#">Link 01</a></li>
-    <li><a href="#">Link 02</a></li>
-    <li><a href="#">Link 03</a></li>
-    <li><a href="#">Link 04</a></li>
-    <li><a href="#">Link 05</a></li>
-    </ul>
+    - Header, global navigation, page body, content, sidebar, footer (Xem lại cấu trúc cơ bản của trang web)
+    - Một số khu vực lớn, cấu trúc có nhiều thẻ bên trong thì cũng nên nhóm lại bằng thẻ < div>< /div> để tiện cho việc điều khiển.
 
-    <div>Nội dung chính</div>
+Xem ví dụ để hiểu rõ hơn về thẻ < div>< /div>, đoạn code bên dưới có sử dụng thuộc tính id, chúng ta có thể xem ở phần tham khảo thuộc tính id.
 
-    <div>Nội dung phụ</div>
-
-    <div>
-    <p>Tên công ty</p>
-    <p>Địa chỉ</p>
-    </div>
-# Các thẻ trong HTML - Tag trong HTML
-
-Như đã trình bày ở trên, HTML là ngôn ngữ đánh dấu bằng thẻ (tag) và sử dụng các thẻ khác nhau để định dạng nội dung. Những thẻ này được chứa trong hai dấu ngoặc đơn < tên thẻ>. Trừ một vài thẻ, hầu hết các thẻ đều có các thẻ đóng tương ứng với nó. Ví dụ, thẻ < html> có thẻ đóng tương ứng là < /html> và thẻ < body> có thẻ đóng tương ứng là < /body> ...
-
-#### Ví dụ trên về tài liệu HTML đã sử dụng các thẻ sau đây:
-
-|Tag          | Miêu tả                                                                                     | 
-|:------------|:--------------------------------------------------------------------------------------------|
-|<!DOCTYPE...>| Còn gọi là thẻ khai báo một tài liệu HTML. Thẻ này xác định loại tài liệu và phiên bản HTML.|
-|< head>      |Thẻ này đại diện cho đầu trang tài liệu mà có thể giữ các thẻ HTML như < title>, < link> ... | 
-|< title>	  |Thẻ < title> được sử dụng trong thẻ < head> chỉ tiêu đề tài liệu.                            | 
-|< body>	  |Thẻ này đại diện cho thân tài liệu và giữ các thẻ như < h1>, < div>, < p> ...                |
-|< h1>	      | Thẻ này đại diện cho các tiêu đề trang.                                                     |
-|< p>         |Thẻ này đại diện cho đoạn văn.                                                               |
-
-# Các thẻ HTML cơ bản (HTML Tag)
-
-## Các thẻ hiển thị đầu đề (heading) trong HTML
+### HTML viết
 
     <!DOCTYPE html>
     <html>
     <head>
-    <title>Day la tieu de - Vi du dau de</title>
+    <meta charset=utf-8" />
+    <title>Tiêu đề trang web</title>
     </head>
+
     <body>
-    <h1>Day la dau de 1</h1>
-    <h2>Day la dau de 2</h2>
-    <h3>Day la dau de 3</h3>
-    <h4>Day la dau de 4</h4>
-    <h5>Day la dau de 5</h5>
-    <h6>Day la dau de 6</h6>
+    <div id="header">Viết nội dung phần header ở đây</div>
+
+    <div id="gNav">Viết nội dung phần global navigation ở đây</div>
+
+    <div id="pageBody">
+    <div id="content">Viết nội dung phần content ở đây</div>
+    <div id="sidebar">Viết nội dung phần sidebar ở đây</div>
+    </div>
+
+    <div id="footer">Viết nội dung phần footer ở đây</div>
     </body>
     </html>
 
-![tieude](https://vietjack.com/html/images/vi-du-html-1.PNG)
+### Hiển thị trình duyệt:
 
-# Phần tử HTML
-Phần tử HTML được xác định bởi thẻ bắt đầu, một số nội dung và thẻ kết thúc.
+<div id="header">Viết nội dung phần header ở đây</div>
+<div id="gNav">Viết nội dung phần global navigation ở đây</div>
+<div id="pageBody">
+<div id="content">Viết nội dung phần content ở đây</div>
+<div id="sidebar">Viết nội dung phần sidebar ở đây</div>
+<div id="footer">Viết nội dung phần footer ở đây</div>
 
-## Phần tử HTML
-Phần tử HTML là tất cả mọi thứ từ thẻ bắt đầu đến thẻ kết thúc:
-< tagname > Nội dung ở đây ... < / tagname >
-Ví dụ về một số phần tử HTML:
-    < h1 > Tiêu đề đầu tiên của tôi < / h1 >
-    < p > Đoạn đầu tiên của tôi. < / p >
+# Thẻ xác định danh sách
 
-    Lưu ý: Một số phần tử HTML không có nội dung (như phần tử <br>).
-     Các phần tử này được gọi là phần tử rỗng. Các phần tử trống không có thẻ kết thúc!
+## Định nghĩa
+Định nghĩa danh sách trong HTML/HTML5 có nhiều dạng khác nhau, mỗi dạng sẽ theo một cấu trúc thẻ khác nhau, do đó việc hiểu rõ danh sách rất quan trọng, nếu bạn chưa nắm rõ cách định nghĩa về danh sách thì bạn không thể hiểu hết được bài học này, xin hãy xem trước định nghĩa về danh sách trong HTML/HTML5.
 
-## Các phần tử HTML lồng nhau
-**Ta có ví dụ:** 
+Thẻ xác định danh sách (có đề mục và mô tả đề mục) là một bộ gồm 3 thẻ:
+
+- < dl>< /dl> viết tắt của chữ "definition list" có nghĩa là sự xác định (hay định nghĩa) danh sách.
+- < dt>< /dt> viết tắt của chữ "defines an item" có nghĩa là xác định (hay định nghĩa) một mục.
+- < dd>< /dd> viết tắt của chữ "defines describe an item" có nghĩa là xác định (hay định nghĩa) một mô tả của một mục.
+
+Thẻ xác định danh sách sử dụng cho danh sách có các mục và có nội dung mô tả cho các mục, không sử dụng cho danh sách không có phần nội dung mô tả.
+
+### HTML viết
 
     <!DOCTYPE html>
     <html>
+    <head>
+    <meta charset=utf-8" />
+    <title>Tiêu đề trang web</title>
+    </head>
+
     <body>
+    <dl>
+    <dt>Trái cây:</dt>
+    <dd>giúp bỗ sung vitamin cho cơ thể.</dd>
 
-    <h1>My First Heading</h1>
-    <p>My first paragraph.</p>
+    <dt>Nước:</dt>
+    <dd>giúp chúng ta tăng cường lượng nước cần cho cơ thể.</dd>
 
+    <dt>Thịt:</dt>
+    <dd>giúp cơ thể tăng cường đạm, và chất béo.</dd>
+    </dl>
     </body>
     </html>
 
-**Giải thích ví dụ:**
+### Hiển thị trình duyệt:
+  <dl>
+    <dt>Trái cây:</dt>
+    <dd>giúp bỗ sung vitamin cho cơ thể.</dd>
+    <dt>Nước:</dt>
+    <dd>giúp chúng ta tăng cường lượng nước cần cho cơ thể.</dd>
+    <dt>Thịt:</dt>
+    <dd>giúp cơ thể tăng cường đạm, và chất béo.</dd>
+    </dl>
+  
 
-Phần tử < html>là phần tử gốc và nó định nghĩa toàn bộ tài liệu HTML.
-Nó có một thẻ bắt đầu < html>và một thẻ kết thúc < /html>.
-Sau đó, bên trong < html>phần tử có một < body> phần tử:
+## Cấu trúc và cách dùng
+Cấu trúc thẻ xác định danh sách phải theo các nguyên tắc sau đây:
 
-        <h1>My First Heading</h1>
-        <p>My first paragraph.</p>
+- Lúc nào cũng phải tồn tại 3 thẻ, không thể thiếu một trong 3: < dl>< /dl>, < dt>< /dt>, < dd>< /dd>.
+- Bên trong thẻ < dt>< /dt> chỉ chứa được các thẻ thuộc nhóm inline.
+- Bên trong thẻ < dd>< /dd> chứa được hầu hết các thẻ HTML/HTML5, tuy nhiên không được chứa một số thẻ sau đây:
+ < html>< /html>, < meta>< /meta>, < body>< /body>, < title>< /title>, < link>< /link>. Và một số thẻ không nên chứa như:
+  < style>< /style>, < script>< /script>.
+- Thẻ < dt>< /dt> và < dd>< /dd> phải được viết trực tiếp bên trong < dl>< /dl>:
 
-Phần < body>tử xác định phần thân của tài liệu.
+        <dl>
+        <dt></dt>
+        <dd></dd>
 
-Nó có một thẻ bắt đầu < body>và một thẻ kết thúc < /body>.
+        <dt></dt>
+        <dd></dd>
+        </dl>
 
-Sau đó, bên trong < body>phần tử có hai phần tử khác: < h1>và < p>:
+ 
+Bên trong thẻ <dl></dl> chỉ chứa trực tiếp thẻ < dt>< /dt> và < dd>< /dd>, không được xen kẻ bất kỳ thẻ nào khác, những cấu trúc như bên dưới đây là sai, không đúng chuẩn W3C:
 
-    <h1>My First Heading</h1>
-    <p>My first paragraph.</p>
+    <dl>
+    <h2></h2>
+    <dt></dt>
+    <dd></dd>
+    </dl>
 
-Phần < h1>tử xác định một tiêu đề.
+    <dl>
+    <dt></dt>
+    <p></p>
+    <dd></dd>
+    </dl>
 
-Nó có thẻ bắt đầu < h1>và thẻ kết thúc < /h1>:
+    <dl>
+    <dt></dt>
+    <div>
+    <dd></dd>
+    </div>
+    </dl>
 
-    <h1>My First Heading</h1>
+# Các thẻ danh sách có thứ tự và không có thứ tự
 
-Phần < p>tử xác định một đoạn văn.
+## Danh sách có thứ tự và không có thứ tự
 
-Nó có thẻ bắt đầu < p>và thẻ kết thúc < /p>:
+Định nghĩa danh sách trong HTML/HTML5 có nhiều dạng khác nhau, mỗi dạng sẽ theo một cấu trúc thẻ khác nhau, do đó việc hiểu rõ 
+danh sách rất quan trọng, nếu bạn chưa nắm rõ cách định nghĩa về danh sách thì bạn không thể hiểu hết được bài học này, xin hãy xem trước định nghĩa về danh sách trong HTML/HTML5.
 
-    <p>My first paragraph.</p>
+## Danh sách có thứ tự
 
-## Không bao giờ bỏ qua thẻ kết thúc
-Một số phần tử HTML sẽ hiển thị chính xác, ngay cả khi bạn quên thẻ kết thúc:
+Để thể hiện danh sách có thứ tự ta sử dụng cặp thẻ: < ol>< /ol> và < li>< /li>, trong đó:
 
-Thí dụ:
+< ol>< /ol> là viết tắt của chữ "ordered list" có nghĩa là danh sách có thứ tự.
+< li>< /li> viết tắt của chữ "list item" có nghĩa là mục của danh sách.
+Danh sách sau đây gọi là danh sách có thứ tự:
 
+    1. Cá lóc kho tiêu
+    2. Cá rô kho tộ
+    3. Cá thu chiên xoài bằm
+    4. Cá điêu hồng nấu ngót
+
+Hoặc:
+
+    a) Học HTML
+    b) Học XHTML
+    c) Học HTML5
+    d) Học CSS2
+    e) Học CSS3
+
+### HTML viết
+
+    <!DOCTYPE html>
     <html>
+    <head>
+    <meta charset=utf-8" />
+    <title>Tiêu đề trang web</title>
+    </head>
+
     <body>
-
-    <p>This is a paragraph
-    <p>This is a paragraph
-
+    <ol>
+    <li>Cá lóc kho tiêu</li>
+    <li>Cá rô kho tộ</li>
+    <li>Cá thu chiên xoài bằm</li>
+    <li>Cá điêu hồng nấu ngót</li>
+    </ol>
     </body>
     </html>
 
-Tuy nhiên, đừng bao giờ dựa vào điều này! Kết quả không mong muốn và có thể xảy ra lỗi nếu bạn quên thẻ kết thúc!
+### Hiển thị trình duyệt:
 
-### Phần tử HTML trống
+1. Cá lóc kho tiêu
+2. Cá rô kho tộ
+3. Cá thu chiên xoài bằm
+4. Cá điêu hồng nấu ngót
 
-Phần tử HTML không có nội dung được gọi là phần tử trống.
+Số thứ tự của danh sách trình duyệt sẽ tự thêm vào.
 
-Các < br>thẻ định nghĩa một ngắt dòng, và là một yếu tố có sản phẩm nào mà không có một thẻ đóng:
+## Danh sách không có thứ tự
+Để thể hiện danh sách không có thứ tự ta sử dụng cặp thẻ: < ul>< /ul> và < li>< /li>, trong đó:
+< ul>< /ul> là viết tắt của chữ: unordered list có nghĩa là danh sách không có thứ tự
+< li>< /li> viết tắt của chữ: list item có nghĩa là mục của danh sách.
+Danh sách sau đây gọi là danh sách không có thứ tự:
 
-Thí dụ:
+      Trang chủ
+      Giới thiệu
+      Sản phẩm
+      Dịch vụ
+      Liên hệ
 
-    <p>This is a <br> paragraph with a line break.</p>
+      Hoặc:
 
-## HTML không phân biệt chữ hoa chữ thường
+      Học HTML
+      Học XHTML
+      Học HTML5
+      Học CSS2
+      Học CSS3
 
-Các thẻ HTML không phân biệt chữ hoa chữ thường: 
+### HTML viết
+    <!DOCTYPE html>
+    <html>
+    <head>
+    <meta charset=utf-8" />
+    <title>Tiêu đề trang web</title>
+    </head>
 
-    <P>có nghĩa là giống như <p>.
+    <body>
+    <ul>
+    <li>Trang chủ</li>
+    <li>Giới thiệu</li>
+    <li>Sản phẩm</li>
+    <li>Dịch vụ</li>
+    <li>Liên hệ</li>
+    </ul>
+    </body>
+    </html>
 
-# Thuộc tính HTML
-Thuộc tính HTML cung cấp thông tin bổ sung về các phần tử HTML.
+Hiển thị trình duyệt:
 
-## Thuộc tính HTML
-1. Tất cả các phần tử HTML có thể có các thuộc tính
-2. Các thuộc tính cung cấp thông tin bổ sung về các phần tử
-3. Các thuộc tính luôn được chỉ định trong thẻ bắt đầu
-4. Các thuộc tính thường có trong các cặp tên / giá trị như: name = "value"
+  <ul>
+  <li>Trang chủ</li>
+  <li>Giới thiệu</li>
+  <li>Sản phẩm</li>
+  <li>Dịch vụ</li>
+  <li>Liên hệ</li>
+  </ul>
 
-## Thuộc tính href
-Các < a> thẻ định nghĩa một siêu liên kết. 
-Các hrefthuộc tính xác định URL của trang liên kết đi vào:
+## Cấu trúc thẻ danh sách có thứ tự và không có thứ tự
 
-Thí dụ:
+Cấu trúc thể hiện thẻ danh sách có thứ tự và không có thứ tự là tương tự nhau.
 
-    <a href="https://www.w3schools.com">Visit W3Schools</a>
+Cấu trúc phải theo các nguyên tắc sau đây:
 
-Bạn sẽ tìm hiểu thêm về các liên kết trong chương Liên kết HTML của chúng tôi .
+- Lúc nào cũng phải tồn tại 1 cặp thẻ, không thể thiếu một trong 2:
 
-## Thuộc tính src
-Các < img>thẻ được sử dụng để nhúng một hình ảnh trong một trang HTML. 
-Các srcquy định cụ thể thuộc tính đường dẫn đến hình ảnh sẽ được hiển thị:
-Thí dụ:
+    + Đối với danh sách có thứ tự, phải tồn tại cặp thẻ: < ol>< /ol>, < li>< /li>.
+    + Đối với danh sách không có thứ tự, phải tồn tại cặp thẻ: < ul>< /ul>, < li>< /li>.
 
-    <img src="img_girl.jpg">
+- Bên trong thẻ < ol>< /ol> (hoặc < ul>< /ul>) chỉ chứa trực tiếp một thẻ duy nhất < li>< /li>.
+- Bên trong thẻ < li>< /li> chứa được hầu hết các thẻ HTML/HTML5, tuy nhiên không được chứa 
+  một số thẻ sau đây: < html>< /html>, < meta>< /meta>, < body>< /body>, < title>< /title>, < link>< /link>.
+   Và một số thẻ không nên chứa như: < style>< /style>, < script>< /script>.
+   
+        <ol>
+        <li></li>
+        <li></li>
+        </ol>
 
-Có hai cách để chỉ định URL trong src thuộc tính:
+        <ul>
+        <li></li>
+        <li></li>
+        </ul>
+  
 
-1. URL tuyệt đối - Liên kết đến một hình ảnh bên ngoài được lưu trữ trên một trang web khác.
-    Ví dụ: 
+  # Thẻ <nav>
+  ## Định nghĩa và sử dụng
+- Tag <nav> định nghĩa liên kết điều hướng (navigation).
+- Tag <nav> thường sử dụng cho global menu, local link, topic path, pager link,...
+- Nội dung bên trong <nav> thường là một danh sách <ul> hoặc <ol>.
+### Cấu trúc
 
-        src = "https://www.w3schools.com/images/img_girl.jpg".
-
-
-2. URL tương đối 
-    - Liên kết đến một hình ảnh được lưu trữ trong trang web. Ở đây, URL không bao gồm tên miền. Nếu URL bắt đầu mà không có dấu gạch chéo, nó sẽ liên quan đến trang hiện tại.
-     Ví dụ: 
-            src = "img_girl.jpg".
-    Nếu URL bắt đầu bằng dấu gạch chéo, nó sẽ có liên quan đến miền. 
-
-        Ví dụ:
-             src = "/ images / img_girl.jpg".
-## Đường kẻ phân cách nằm ngang
-Tag ** < hr/>** tạo một đường nằm ngang, bên trong trang HTML.
-Tag < hr/> có thể được sử dụng để tách nội dung bên trong trang HTML.
-## Ngắt dòng HTML
-Phần < br*tử HTML xác định ngắt dòng.
-Sử dụng < br>nếu bạn muốn ngắt dòng (một dòng mới) mà không bắt đầu một đoạn văn mới:
-
-## Giải pháp - Phần tử <pre> HTML
-Phần < pre>tử HTML xác định văn bản được định dạng trước.
-
-Văn bản bên trong một < pre> là phần vắn có định dạng giữ nguyên không thay đổi từ trong file html khi ra đến trình duyệt.
-
-## Kiểu HTML
-style: Thuộc tính HTML được sử dụng để thêm kiểu vào một phần tử, chẳng hạn như màu sắc, phông chữ, kích thước, v.v.
-### Một số thuộc tính và tác dụng 
-style           : thuộc tính để tạo kiểu các phần tử HTML vd: < tagname style="property:value;">
-background-color: cho màu nền                             vd: < p style="background-color:tomato;">This is a paragraph.< /p>
-color           : cho màu văn bản                         vd: < p style="color:red;">This is a paragraph.< /p>
-font-family     : cho phông chữ văn bản                   vd: < p style="font-family:courier;">This is a paragraph.< /p>
-font-size       : cho các kích thước văn bản              vd: < p style="font-size:160%;">This is a paragraph.< /p>
-text-align      : để căn chỉnh văn bản                    vd: < p style="text-align:center;">Centered paragraph.< /p>
-
-
-## Định dạng văn bản HTML
-HTML chứa một số yếu tố để xác định văn bản có ý nghĩa đặc biệt.
-### Một số yếu tố định dạng HTML
-< b>      : Chữ in đậm                  vd: <b>This text is bold</b>
-< strong> : Văn bản quan trọng          vd: <strong>This text is important!</strong>
-< i>      : Văn bản in nghiêng          vd: <i>This text is italic</i>
-< em>     : Đoạn văn bản được nhấn mạnh vd: <em>This text is emphasized</em>
-< mark>   : Văn bản được đánh dấu       vd: <small>This is some smaller text.</small>
-< small>  : Văn bản nhỏ hơn             vd: <p>Do not forget to buy <mark>milk</mark> today.</p>
-< del>    : Văn bản đã xóa              vd: <p>My favorite color is <del>blue</del> red.</p>
-< ins>    : Đã chèn văn bản             vd: <p>My favorite color is <del>blue</del> <ins>red</ins>.</p>
-< sub>    : Văn bản chỉ số              vd: <p>This is <sub>subscripted</sub> text.</p>
-< sup>    : Văn bản siêu cấp            vd: <p>This is <sup>superscripted</sup> text.</p>
-
-
-
-
-
-
+    <nav>
+        <ul>
+            <li><a href="#">Trang chủ<a></li>
+            <li><a href="#">Giới thiệu<a></li>
+            <li><a href="#">Sản phẩm<a></li>
+            <li><a href="#">Liên hệ<a></li>
+        </ul>
+    </nav>
 
 
+  # Thẻ <header>
+
+## Định nghĩa và sử dụng
+- Tag <header> định nghĩa khu vực header (phần đầu) của trang.
+- Thường được dùng cho phần giới thiệu hay chứa các thành phần chuyển hướng (navigation).
+### Cấu trúc
+
+    <header></header>
+ ### Ví dụ 
+    <header>
+          HEADER
+
+          <nav>
+              <ul>
+                  <li><a href="#">Trang chủ<a></li>
+                  <li><a href="#">Giới thiệu<a></li>
+                  <li><a href="#">Sản phẩm<a></li>
+                  <li><a href="#">Liên hệ<a></li>
+              </ul>
+          </nav>
+      </header>
 
 
+# section
+
+## Định nghĩa và sử dụng
+- Tag < section> định nghĩa một khu vực (vùng bao) trong văn bản HTML.
+- Tag < section> bên trong thường chứa một < hx> và nội dung.
+
+## Cấu trúc
+
+    <section>
+    <h2>Tiêu đề section</h2>
+    ...
+    </section>
+
+### Ví dụ
+    <section id="layout">
+        <header>
+            HEADER
+
+            <nav>
+                <ul>
+                    <li><a href="#">Trang chủ<a></li>
+                    <li><a href="#">Giới thiệu<a></li>
+                    <li><a href="#">Sản phẩm<a></li>
+                    <li><a href="#">Liên hệ<a></li>
+                </ul>
+            </nav>
+        </header>
+    </section>
 
 
+# footer
+## Định nghĩa và sử dụng
+- Tag < footer> định nghĩa khu vực footer (phần cuối) của trang.
+- Thường chứa các thông tin liên lạc của tác giả, nguồn gốc của bài viết.
+## Cấu trúc
+ 
+    <footer></footer>
+
+# Những thẻ thuộc nhóm inline
 
 
-
-
+- Những thẻ thuộc nhóm inline là những thẻ cơ bản của HTML/XHTML, chỉ được dùng để chứa nội dung cho text hoặc các thẻ inline khác.
+- - Bản thân text cũng có thể coi thuộc nhóm inline.
+- Những thẻ thuộc nhóm inline nên được bao ngoài bởi nhóm các thẻ block, vì các thẻ block sẽ lo nhiệm vụ dàn trang web, còn 
+  các thẻ thuộc nhóm inline chỉ để hiển thị nội dung cho văn bản.
+- Những thẻ thuộc nhóm inline có thể được lồng vào nhau.
+- Không được sử dụng các thẻ khác bên trong các thẻ inline, cách sử dụng sau đây là không đúng chuẩn:
