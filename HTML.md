@@ -284,6 +284,212 @@ Thẻ xác định danh sách (có đề mục và mô tả đề mục) là m�
 
 Thẻ xác định danh sách sử dụng cho danh sách có các mục và có nội dung mô tả cho các mục, không sử dụng cho danh sách không có phần nội dung mô tả.
 
+### HTML viết
+
+    <!DOCTYPE html>
+    <html>
+    <head>
+    <meta charset=utf-8" />
+    <title>Tiêu đề trang web</title>
+    </head>
+
+    <body>
+    <dl>
+    <dt>Trái cây:</dt>
+    <dd>giúp bỗ sung vitamin cho cơ thể.</dd>
+
+    <dt>Nước:</dt>
+    <dd>giúp chúng ta tăng cường lượng nước cần cho cơ thể.</dd>
+
+    <dt>Thịt:</dt>
+    <dd>giúp cơ thể tăng cường đạm, và chất béo.</dd>
+    </dl>
+    </body>
+    </html>
+
+### Hiển thị trình duyệt:
+  <dl>
+    <dt>Trái cây:</dt>
+    <dd>giúp bỗ sung vitamin cho cơ thể.</dd>
+    <dt>Nước:</dt>
+    <dd>giúp chúng ta tăng cường lượng nước cần cho cơ thể.</dd>
+    <dt>Thịt:</dt>
+    <dd>giúp cơ thể tăng cường đạm, và chất béo.</dd>
+    </dl>
+  
+
+## Cấu trúc và cách dùng
+Cấu trúc thẻ xác định danh sách phải theo các nguyên tắc sau đây:
+
+- Lúc nào cũng phải tồn tại 3 thẻ, không thể thiếu một trong 3: < dl>< /dl>, < dt>< /dt>, < dd>< /dd>.
+- Bên trong thẻ < dt>< /dt> chỉ chứa được các thẻ thuộc nhóm inline.
+- Bên trong thẻ < dd>< /dd> chứa được hầu hết các thẻ HTML/HTML5, tuy nhiên không được chứa một số thẻ sau đây:
+ < html>< /html>, < meta>< /meta>, < body>< /body>, < title>< /title>, < link>< /link>. Và một số thẻ không nên chứa như:
+  < style>< /style>, < script>< /script>.
+- Thẻ < dt>< /dt> và < dd>< /dd> phải được viết trực tiếp bên trong < dl>< /dl>:
+
+        <dl>
+        <dt></dt>
+        <dd></dd>
+
+        <dt></dt>
+        <dd></dd>
+        </dl>
+
+ 
+Bên trong thẻ <dl></dl> chỉ chứa trực tiếp thẻ < dt>< /dt> và < dd>< /dd>, không được xen kẻ bất kỳ thẻ nào khác, những cấu trúc như bên dưới đây là sai, không đúng chuẩn W3C:
+
+    <dl>
+    <h2></h2>
+    <dt></dt>
+    <dd></dd>
+    </dl>
+
+    <dl>
+    <dt></dt>
+    <p></p>
+    <dd></dd>
+    </dl>
+
+    <dl>
+    <dt></dt>
+    <div>
+    <dd></dd>
+    </div>
+    </dl>
+
+# Các thẻ danh sách có thứ tự và không có thứ tự
+
+## Danh sách có thứ tự và không có thứ tự
+
+Định nghĩa danh sách trong HTML/HTML5 có nhiều dạng khác nhau, mỗi dạng sẽ theo một cấu trúc thẻ khác nhau, do đó việc hiểu rõ 
+danh sách rất quan trọng, nếu bạn chưa nắm rõ cách định nghĩa về danh sách thì bạn không thể hiểu hết được bài học này, xin hãy xem trước định nghĩa về danh sách trong HTML/HTML5.
+
+## Danh sách có thứ tự
+
+Để thể hiện danh sách có thứ tự ta sử dụng cặp thẻ: < ol>< /ol> và < li>< /li>, trong đó:
+
+< ol>< /ol> là viết tắt của chữ "ordered list" có nghĩa là danh sách có thứ tự.
+< li>< /li> viết tắt của chữ "list item" có nghĩa là mục của danh sách.
+Danh sách sau đây gọi là danh sách có thứ tự:
+
+    1. Cá lóc kho tiêu
+    2. Cá rô kho tộ
+    3. Cá thu chiên xoài bằm
+    4. Cá điêu hồng nấu ngót
+
+Hoặc:
+
+    a) Học HTML
+    b) Học XHTML
+    c) Học HTML5
+    d) Học CSS2
+    e) Học CSS3
+
+### HTML viết
+
+    <!DOCTYPE html>
+    <html>
+    <head>
+    <meta charset=utf-8" />
+    <title>Tiêu đề trang web</title>
+    </head>
+
+    <body>
+    <ol>
+    <li>Cá lóc kho tiêu</li>
+    <li>Cá rô kho tộ</li>
+    <li>Cá thu chiên xoài bằm</li>
+    <li>Cá điêu hồng nấu ngót</li>
+    </ol>
+    </body>
+    </html>
+
+### Hiển thị trình duyệt:
+
+1. Cá lóc kho tiêu
+2. Cá rô kho tộ
+3. Cá thu chiên xoài bằm
+4. Cá điêu hồng nấu ngót
+
+Số thứ tự của danh sách trình duyệt sẽ tự thêm vào.
+
+## Danh sách không có thứ tự
+Để thể hiện danh sách không có thứ tự ta sử dụng cặp thẻ: < ul>< /ul> và < li>< /li>, trong đó:
+< ul>< /ul> là viết tắt của chữ: unordered list có nghĩa là danh sách không có thứ tự
+< li>< /li> viết tắt của chữ: list item có nghĩa là mục của danh sách.
+Danh sách sau đây gọi là danh sách không có thứ tự:
+
+      Trang chủ
+      Giới thiệu
+      Sản phẩm
+      Dịch vụ
+      Liên hệ
+
+      Hoặc:
+
+      Học HTML
+      Học XHTML
+      Học HTML5
+      Học CSS2
+      Học CSS3
+
+### HTML viết
+    <!DOCTYPE html>
+    <html>
+    <head>
+    <meta charset=utf-8" />
+    <title>Tiêu đề trang web</title>
+    </head>
+
+    <body>
+    <ul>
+    <li>Trang chủ</li>
+    <li>Giới thiệu</li>
+    <li>Sản phẩm</li>
+    <li>Dịch vụ</li>
+    <li>Liên hệ</li>
+    </ul>
+    </body>
+    </html>
+
+Hiển thị trình duyệt:
+
+  <ul>
+  <li>Trang chủ</li>
+  <li>Giới thiệu</li>
+  <li>Sản phẩm</li>
+  <li>Dịch vụ</li>
+  <li>Liên hệ</li>
+  </ul>
+
+## Cấu trúc thẻ danh sách có thứ tự và không có thứ tự
+
+Cấu trúc thể hiện thẻ danh sách có thứ tự và không có thứ tự là tương tự nhau.
+
+Cấu trúc phải theo các nguyên tắc sau đây:
+
+- Lúc nào cũng phải tồn tại 1 cặp thẻ, không thể thiếu một trong 2:
+
+    + Đối với danh sách có thứ tự, phải tồn tại cặp thẻ: < ol>< /ol>, < li>< /li>.
+    + Đối với danh sách không có thứ tự, phải tồn tại cặp thẻ: < ul>< /ul>, < li>< /li>.
+
+- Bên trong thẻ < ol>< /ol> (hoặc < ul>< /ul>) chỉ chứa trực tiếp một thẻ duy nhất < li>< /li>.
+- Bên trong thẻ < li>< /li> chứa được hầu hết các thẻ HTML/HTML5, tuy nhiên không được chứa 
+  một số thẻ sau đây: < html>< /html>, < meta>< /meta>, < body>< /body>, < title>< /title>, < link>< /link>.
+   Và một số thẻ không nên chứa như: < style>< /style>, < script>< /script>.
+   
+        <ol>
+        <li></li>
+        <li></li>
+        </ol>
+
+        <ul>
+        <li></li>
+        <li></li>
+        </ul>
+
+
 
 
 
