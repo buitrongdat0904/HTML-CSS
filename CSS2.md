@@ -109,3 +109,42 @@ Thuộc tính này có thể nhận các giá trị left, right hoặc center. V
 ## Thuộc tính table-layout trong CSS
 - Thuộc tính table-layout hỗ trợ bạn điều khiển cách mà trình duyệt nên tạo layout cho một bảng.
 - Thuộc tính này có thể nhận một trong ba giá trị: fixed, auto hoặc inherit.
+
+## Đường viền trong CSS | Border trong CSS
+
+### Thuộc tính border-color trong CSS
+- Để xác định màu cho đường viền trong CSS, bạn sử dụng thuộc tính border-color. Ngoài việc xác định màu cho toàn bộ đường viền bao 
+quanh phần tử, bạn cũng có thể xác định riêng rẽ màu cho từng phần của đường viền, chẳng hạn như phần trên, đáy, cạnh trái 
+hoặc cạnh phải. Tùy theo mục đích, bạn sử dụng một trong các thuộc tính sau đây.
+
++ Thuộc tính border-bottom-color giúp bạn thay đổi màu của đáy đường viền.
++ Thuộc tính border-top-color giúp bạn thay đổi màu của phần trên đường viền.
++ Thuộc tính border-left-color giúp bạn thay đổi màu của cạnh trái đường viền.
++ Thuộc tính border-right-color giúp bạn thay đổi màu của cạnh phải đường viền.
+
+### Thuộc tính border-style trong CSS
+- Để xác định xem style của đường viền là solid, dotted, dashed, double, …, bạn có thể sử dụng thuộc tính border-style trong CSS. 
+  Thuộc tính này có thể nhận các giá trị sau:none solid; dotted; dashed; double; groove; ridge; inset; outset; hidden;
+
+- Giống như thuộc tính border-color, bạn cũng có thể xác định style riêng cho từng phần (trên, đáy, cạnh trái, cạnh phải)
+  của đường viền. Các thuộc tính là:
+
++ Thuộc tính border-bottom-style thay đổi style cho cạnh dưới của đường viền.
++ Thuộc tính border-top-style thay đổi style cho cạnh trên của đường viền.
++ Thuộc tính border-left-style thay đổi style cho cạnh trái của đường viền.
++ Thuộc tính border-right-style thay đổi style cho cạnh phải của đường viền.
+
+## Thuộc tính border-width trong CSS
+
+- Sử dụng thuộc tính border-width trong CSS giúp bạn thay đổi độ rộng của đường viền bao quanh một phần tử. Thuộc tính này 
+  có thể nhận một giá trị đo chiều dài với đơn vị là px, pt hoặc cm hoặc có thể là thin, medium hoặc thick.
+
+- Để xác định độ rộng cho từng cạnh của đường viền, bạn có thể sử dụng các thuộc tính sau:
++ Thuộc tính border-bottom-width thay đổi style cho cạnh dưới của đường viền.
++ Thuộc tính border-top-width thay đổi style cho cạnh trên của đường viền.
++ Thuộc tính border-left-width thay đổi style cho cạnh trái của đường viền.
++ Thuộc tính border-right-width thay đổi style cho cạnh phải của đường viền.
+
+## Thuộc tính border trong CSS
+-Sử dụng thuộc tính border trong CSS, bạn có thể tối thiểu hóa lượng code cần viết mà vẫn có thể xác định đầy đủ style cho đường viền.
+-Trong phần style rule xác định cho thuộc tính border, bạn bắt buộc phải xác định giá trị cho thuộc tính border-style.
