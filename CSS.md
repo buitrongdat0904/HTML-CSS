@@ -143,6 +143,53 @@
   Thuộc tính này có thể nhận một trong các giá trị :left, right, center, justify.
 
 ### Trang trí văn bản với thuộc tính text-decoration trong CSS
+
 - Để tạo các dấu gạch ngang ở chân, ở trên hoặc ở giữa một đoạn văn bản, bạn sử dụng thuộc tính text-direction trong CSS. 
   Thuộc tính này có thể nhận giá trị: none, overline (dấu gạch ở trên), underline (gạch chân), line-through (gạch ngang) hoặc blink. 
+
+## Thiết lập chữ hoa, chữ thường trong CSS
+
+- Để thiết lập chữ hoa hoặc chữ thường cho một đoạn văn bản, bạn sử dụng thuộc tính text-transform trong CSS. Thuộc tính này có thể 
+  nhận giá trị: none, capitalize (viết hoa chữ cái đầu tiên của một từ), uppercase (chuyển toàn bộ văn bản thành chữ hoa), 
+  hoặc lowercase (chuyển toàn bộ văn bản thành chữ thường).
+
+### Thiết lập khoảng cách của khoảng trắng trong CSS
+
+- Giả sử bạn có một dòng văn bản mà truyền tải thông tin quan trọng, và bạn muốn tăng khoảng cách giữa các từ trong đoạn văn này, 
+  bạn có thể sử dụng thuộc tính white-space trong CSS. Thuộc tính này có thể nhận giá trị: normal, pre hoặc nowrap.
+
+### Tạo shadow trong CSS
+- Để tạo shadow cho văn bản, bạn sử dụng thuộc tính text-shadow trong CSS. Tuy nhiên thuộc tính này có thể không được hỗ trợ 
+  trong một số trình duyệt. Cú pháp:
+
+      > text-shadow: h-shadow v-shadow blur-radius color|none|initial|inherit;
+
+## Hiệu ứng Hình ảnh trong CSS
+
+Hình ảnh đóng vai trò quan trọng trong bất kỳ Webpage nào. Hiện này, khó có thể tìm thấy một Webpage hiện đại nào mà không có hình ảnh. Tuy nhiên, không phải cứ thêm quá nhiều hình ảnh (trừ các Webpage cho thời trang hay mẫu quần áo) là tốt. Việc trang trí hình ảnh đẹp và hợp lý sẽ làm trang của bạn tạo ấn tượng với người dùng.
+
+Để làm cho hình ảnh đẹp hơn, bạn có thể sử dụng các thuộc tính trong CSS. CSS có các thuộc tính:
+
+  - Thuộc tính border: Thiết lập độ rộng của đường viền bao quanh hình ảnh.
+  - Thuộc tính height: Thiết lập chiều cao của hình ảnh.
+  - Thuộc tính width: Thiết lập độ rộng của hình ảnh.
+  - Thuộc tính –moz-opacity: thiết lập độ trong suốt của hình ảnh.
+
+### Thuộc tính border trong CSS
+- Để thiết lập độ rộng của đường viền bao quanh hình ảnh, bạn sử dụng thuộc tính border trong CSS. 
+  Thuộc tính này có thể nhận giá trị: độ dài đo bằng px hoặc %..
+
+- Nếu thiết lập giá trị là 0px, nghĩa là hình ảnh của bạn không có đường viền bao quanh.
+
+### Thuộc tính height trong CSS
+- Để điều khiển chiều cao của hình ảnh hiển thị trong Webpage, bạn có thể sử dụng thuộc tính height trong CSS. 
+  Thuộc tính này có thể nhận giá trị: chiều cao đo bằng px hoặc %. Nếu được xác định bằng đơn vị %,
+  chiều cao của hình ảnh sẽ được tính tỷ lệ với khối chứa hình ảnh đó.
+
+### Thuộc tính width trong CSS
+- Để xác định độ rộng của hình ảnh, bạn có thể sử dụng thuộc tính width trong CSS. 
+  Thuộc tính này có thể nhận giá trị: độ rộng đo bằng px hoặc %. Nếu được xác định bằng đơn vị %,
+  độ rộng của hình ảnh sẽ được tính tỷ lệ với khối chứa hình ảnh đó.
+
+
 
