@@ -145,6 +145,35 @@ hoặc cạnh phải. Tùy theo mục đích, bạn sử dụng một trong các
 + Thuộc tính border-left-width thay đổi style cho cạnh trái của đường viền.
 + Thuộc tính border-right-width thay đổi style cho cạnh phải của đường viền.
 
-## Thuộc tính border trong CSS
+### Thuộc tính border trong CSS
 -Sử dụng thuộc tính border trong CSS, bạn có thể tối thiểu hóa lượng code cần viết mà vẫn có thể xác định đầy đủ style cho đường viền.
 -Trong phần style rule xác định cho thuộc tính border, bạn bắt buộc phải xác định giá trị cho thuộc tính border-style.
+
+## Căn lề trong CSS
+
+- Để xác định phần không gian xung quanh các phần tử, bạn sử dụng thuộc tính margin trong CSS. Thuộc tính margin thiết lâp kích cỡ 
+  của phần khoảng trống BÊN NGOÀI đường viền. Với margin, bạn cũng có thể xác định một giá trị âm cho thuộc tính này để tạo các phần 
+  nội dung gối lên nhau.
+- Giá trị của thuộc tính margin không được kế thừa bởi các phần tử con. Bạn hãy nhớ rằng các lề dọc lân cận (các lề trên và lề dưới) 
+  sẽ kết hợp thành một lề.
+- Để căn lề cho một phần tử, bạn có các thuộc tính sau:
+    + Thuộc tính **margin**: sử dụng thuộc tính này bạn có thể thiết lập tất cả style liên quan tới việc căn lề chỉ trong một khai báo CSS.
+
+    + Thuộc tính **margin-bottom** căn lề dưới của một phần tử.
+
+    + Thuộc tính **margin-top** căn lề trên của một phần tử.
+
+    + Thuộc tính **margin-left** căn lề trái của một phần tử.
+
+    + Thuộc tính **margin-right** căn lề phải của một phần tử.
+
+-Tất cả các thuộc tính liên quan tới Margin trên đều có thể nhận các giá trị sau:
+
++ **auto**: Trình duyệt tự động ước lượng việc căn lề cho phần tử.
+
++ **length**: Xác định độ rộng (đơn vị px, pt, cm, …) của lề. Giá trị mặc định là 0.
+
++ **%**: Xác định mối quan hệ giữa lề với độ rộng của phần tử chứa lề.
+
++ **inherit**: Kế thừa thuộc tính này từ phần tử cha chứa phần tử có thuộc tính margin này.
+
