@@ -158,22 +158,30 @@ hoặc cạnh phải. Tùy theo mục đích, bạn sử dụng một trong các
   sẽ kết hợp thành một lề.
 - Để căn lề cho một phần tử, bạn có các thuộc tính sau:
     + Thuộc tính **margin**: sử dụng thuộc tính này bạn có thể thiết lập tất cả style liên quan tới việc căn lề chỉ trong một khai báo CSS.
-
     + Thuộc tính **margin-bottom** căn lề dưới của một phần tử.
-
     + Thuộc tính **margin-top** căn lề trên của một phần tử.
-
     + Thuộc tính **margin-left** căn lề trái của một phần tử.
-
     + Thuộc tính **margin-right** căn lề phải của một phần tử.
 
 -Tất cả các thuộc tính liên quan tới Margin trên đều có thể nhận các giá trị sau:
 
 + **auto**: Trình duyệt tự động ước lượng việc căn lề cho phần tử.
-
 + **length**: Xác định độ rộng (đơn vị px, pt, cm, …) của lề. Giá trị mặc định là 0.
-
 + **%**: Xác định mối quan hệ giữa lề với độ rộng của phần tử chứa lề.
-
 + **inherit**: Kế thừa thuộc tính này từ phần tử cha chứa phần tử có thuộc tính margin này.
+
+## List trong CSS
+
+- Trình bày hay liệt kê một danh sách có kèm theo các bullet hoặc dưới dạng đánh số giúp phần văn bản của bạn dễ đọc 
+  và tạo cảm giác thân thiện hơn. Để tạo style riêng cho phần list, bạn có thể sử dụng các thuộc tính trong CSS.
+- Có 5 thuộc tính trong CSS
+    + Thuộc tính **list-style-type** cho phép bạn kiểm soát hình dạng hay bề ngoài của Marker (giống như Bullet) 
+      chẳng hạn ở dạng hình tròn, hình vuông, hay dạng số, ...
+    + Thuộc tính **list-style-position** xác định rằng marker nên xuất hiện bên trong hay bên ngoài luồng hiển thị nội dung.
+    + Thuộc tính **list-style-image:** sử dụng một hình ảnh để làm marker thay cho các bullet hoặc số.
+    + Thuộc tính **list-style:** sử dụng thuộc tính này, bạn có thể khai báo một lần
+       mà vẫn có thể xác định được tất cả các thuộc tính trên.
+    + Thuộc tính **marker-offset** xác định khoảng cách giữa một marker và phần text trong danh sách.
+    
+
 
