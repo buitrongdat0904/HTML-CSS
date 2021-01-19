@@ -183,5 +183,3 @@ hoặc cạnh phải. Tùy theo mục đích, bạn sử dụng một trong các
        mà vẫn có thể xác định được tất cả các thuộc tính trên.
     + Thuộc tính **marker-offset** xác định khoảng cách giữa một marker và phần text trong danh sách.
     
-
-
